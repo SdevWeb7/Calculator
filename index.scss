@@ -3,7 +3,7 @@
   src: url("./assets/LeagueSpartan-VariableFont_wght.ttf")format('truetype');
 };
 
-html, body {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,6 +14,8 @@ html, body {
   width: 380px;
   margin: 80px auto 20px auto;
   color: white;
+  border: 2px solid white;
+  border-radius: 6px;
 }
 .header {
   display: flex;
@@ -21,7 +23,7 @@ html, body {
 
   .title {
     font-size: 30px;
-    margin: 10px 0 10px 10px;
+    margin: 10px 0 0 10px;
     padding: 0;
     font-weight: 700;
   }
@@ -111,4 +113,147 @@ html, body {
   grid-column: 1 / span 2;
   margin: 0 15px 0 0;
   width: unset;
+}
+.scroll-theme {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+}
+.range-theme {
+  appearance: none;
+  background: lightgray;
+  border-radius: 30px;
+  color: #FFF ;
+  background: lightgray;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+}
+.themes {
+  display: flex;
+  margin: 0 0 20px 0;
+
+  p {
+    margin: 0 10px 10px 0;
+    justify-self: end;
+    align-self: end;
+  }
+}
+.labels {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    margin: 5px 5px;
+  }
+}
+
+.theme-light {
+  background-color: hsl(0, 0%, 90%);
+
+  .calculette {
+    color: black;
+    border: 2px solid black;
+  }
+
+  .screen {
+    background-color: hsl(0, 0%, 93%);
+    color: black;
+
+    .operations {
+      color: black;
+    }
+
+  }
+  .buttons {
+    background-color: hsl(0, 5%, 81%);
+  }
+  .button {
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    box-shadow: 0px 3px 0px 0px hsl(28, 16%, 65%);
+
+    &:hover {
+      background-color: white;
+    }
+  }
+  .del, .reset {
+    color: white;
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0px 3px 0px 0px hsl(185, 58%, 25%);
+    &:hover {
+      background-color: hsl(185, 52%, 58%);
+    }
+  }
+  .equal {
+    background-color: hsl(25, 98%, 40%);
+    color: white;
+    box-shadow: 0px 3px 0px 0px hsl(25, 99%, 27%);
+
+    &:hover {
+      background-color: hsl(25, 91%, 55%);
+    }
+
+  }
+  .range-theme {
+    background: lightgray;
+    color: #FFF ;
+    background: lightgray;
+  }
+
+}
+
+.theme-middle {
+
+  background-color: hsl(268, 75%, 9%);
+
+  .calculette {
+    color: hsl(52, 100%, 62%);
+    border: 2px solid hsl(52, 100%, 62%);
+  }
+
+  .screen {
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+
+    .operations {
+      color: hsl(52, 100%, 62%);
+    }
+
+  }
+  .buttons {
+    background-color: hsl(268, 71%, 12%);
+  }
+  .button {
+    background-color: hsl(268, 47%, 21%);
+    color: hsl(52, 100%, 62%);
+    box-shadow: 0px 3px 0px 0px hsl(290, 70%, 36%);
+
+    &:hover {
+      background-color: hsl(281, 74%, 35%);
+    }
+  }
+  .del, .reset {
+    color: white;
+    background-color:  hsl(281, 89%, 26%);
+    box-shadow: 0px 3px 0px 0px hsl(285, 91%, 52%);
+    &:hover {
+      background-color: hsl(281, 77%, 46%);
+    }
+  }
+  .equal {
+    background-color: hsl(176, 100%, 44%);
+    color: hsl(198, 20%, 13%);
+    box-shadow: 0px 3px 0px 0px hsl(177, 92%, 70%);
+
+    &:hover {
+      background-color: hsl(177, 92%, 70%);
+    }
+
+  }
+  .range-theme {
+    background: lightgray;
+    color: #FFF ;
+    background: lightgray;
+  }
+
 }
