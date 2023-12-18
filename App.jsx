@@ -1,10 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
 
    const [numberStocked, setNumberStocked] = useState("")
    const [currentNumber, setCurrentNumber] = useState("")
    const [affichage, setAffichage] = useState('0')
+   const [theme, setTheme] = useState('1')
+
+   useEffect(() => {
+      document.body.removeAttribute('class');
+      switch (theme) {
+         case '1':
+            break
+         case '2':
+            document.body.classList.add('theme-middle')
+            break
+         case '3':
+            document.body.classList.add('theme-light')
+            break
+         default:
+            break
+      }
+   }, [theme])
 
 
    const handleNumber = (value) => {
@@ -37,6 +54,9 @@ function App() {
       setCurrentNumber('')
       setAffichage('0')
    }
+   const handleTheme = (e) => {
+      setTheme(e.currentTarget.value)
+   }
 
    return (
     <div className={'calculette'}>
@@ -44,7 +64,15 @@ function App() {
       <div className="header">
          <p className={'title'}>Calculatrice</p>
          <div className="themes">
-            <p>Thème : </p>
+            <p>Thème </p>
+            <div className="scroll-theme">
+               <div className="labels">
+                  <p>1</p>
+                  <p>2</p>
+                  <p>3</p>
+               </div>
+               <input className={'range-theme'} id={'range-theme'} name={'range-theme'} type="range" min={1} max={3} onChange={handleTheme} />
+            </div>
          </div>
       </div>
 
