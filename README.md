@@ -1,5 +1,7 @@
 ![](./screenshot1.jpg)
 ![](./screenshot2.jpg)
+![](./screenshot3.jpg)
+![](./screenshot4.jpg)
 
 
 # Frontend Mentor - Calculator app solution
@@ -25,5 +27,5 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 ## Author
 
 - Website - [SdevWeb](https://sdevweb.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Veustyle](https://www.frontendmentor.io/profile/veustyle)
 - Github - [SdebWeb7](https://github.com/SdevWeb7)
